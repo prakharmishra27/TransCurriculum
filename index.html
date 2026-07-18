@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="TransCurriculum is a history-aware, multidimensional curriculum-learning method for fast and stable quadrupedal locomotion.">
+  <meta name="keywords" content="robotics, reinforcement learning, curriculum learning, legged locomotion, sim-to-real">
+  <meta name="author" content="Prakhar Mishra, Amir Hossain Raj, Xuesu Xiao, Dinesh Manocha">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="TransCurriculum">
+  <meta property="og:description" content="Multi-Dimensional Curriculum Learning for Fast & Stable Locomotion">
+  <meta property="og:url" content="https://prakharmishra27.github.io/TransCurriculum/">
+  <meta name="citation_title" content="TransCurriculum: Multi-Dimensional Curriculum Learning for Fast & Stable Locomotion">
+  <meta name="citation_author" content="Mishra, Prakhar">
+  <meta name="citation_author" content="Raj, Amir Hossain">
+  <meta name="citation_author" content="Xiao, Xuesu">
+  <meta name="citation_author" content="Manocha, Dinesh">
+  <meta name="citation_publication_date" content="2026">
+  <meta name="citation_conference_title" content="IEEE/RSJ International Conference on Intelligent Robots and Systems">
+  <meta name="citation_pdf_url" content="https://prakharmishra27.github.io/TransCurriculum/static/pdfs/TransCurriculum.pdf">
+  <title>TransCurriculum | IROS 2026</title>
+  <link rel="stylesheet" href="static/css/bulma.min.css">
+  <link rel="stylesheet" href="static/css/index.css">
+  <style>
+    .hero .hero-body { padding-bottom: 2rem; }
+    .publication-title { line-height: 1.15; }
+    .publication-authors a { color: #3273dc !important; }
+    .result-card { height: 100%; padding: 1.35rem; border: 1px solid #e5e7eb; border-radius: 12px; }
+    .result-card .value { font-size: 1.9rem; font-weight: 700; }
+    pre { white-space: pre-wrap; word-wrap: break-word; }
+  </style>
+</head>
+<body>
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <h1 class="title is-1 publication-title">TransCurriculum</h1>
+            <h2 class="subtitle is-3">Multi-Dimensional Curriculum Learning for Fast &amp; Stable Locomotion</h2>
+            <div class="is-size-5 publication-authors">
+              <span class="author-block">Prakhar Mishra<sup>1,*</sup>,</span>
+              <span class="author-block">Amir Hossain Raj<sup>2</sup>,</span>
+              <span class="author-block">Xuesu Xiao<sup>2</sup>,</span>
+              <span class="author-block">Dinesh Manocha<sup>1</sup></span>
+            </div>
+            <div class="is-size-5 publication-authors">
+              <span class="author-block"><sup>1</sup>University of Maryland, College Park</span><br>
+              <span class="author-block"><sup>2</sup>George Mason University</span><br>
+              <span class="author-block">IROS 2026</span>
+            </div>
+            <div class="publication-links">
+              <span class="link-block">
+                <a href="static/pdfs/TransCurriculum.pdf" class="external-link button is-normal is-rounded is-dark">
+                  <span>Paper</span>
+                </a>
+              </span>
+              <span class="link-block">
+                <a href="https://github.com/prakharmishra27/TransCurriculum" class="external-link button is-normal is-rounded is-dark">
+                  <span>Code</span>
+                </a>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-3">Overview</h2>
+          <div class="content has-text-justified">
+            <p>TransCurriculum is a transformer-based, multidimensional curriculum-learning approach for agile quadrupedal locomotion. It adapts task sampling across velocity commands, terrain difficulty, and domain-randomization parameters using locally retrieved training history. We evaluate the approach on the Unitree Go1 in Isaac Gym and through zero-shot hardware deployment.</p>
+          </div>
+        </div>
+      </div>
+      <div class="columns is-centered has-text-centered mt-5">
+        <div class="column"><div class="result-card"><div class="value">6.3 m/s</div><div>maximum simulated velocity</div></div></div>
+        <div class="column"><div class="result-card"><div class="value">4.1 m/s</div><div>zero-shot hardware velocity</div></div></div>
+        <div class="column"><div class="result-card"><div class="value">18%</div><div>full-curriculum transfer loss</div></div></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="BibTeX">
+    <div class="container is-max-desktop content">
+      <h2 class="title">BibTeX</h2>
+      <pre><code>@inproceedings{mishra2026transcurriculum,
+  title     = {TransCurriculum: Multi-Dimensional Curriculum Learning for Fast and Stable Locomotion},
+  author    = {Mishra, Prakhar and Raj, Amir Hossain and Xiao, Xuesu and Manocha, Dinesh},
+  booktitle = {IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)},
+  year      = {2026}
+}</code></pre>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="content has-text-centered">
+        <p>Website adapted from the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template">Academic Project Page Template</a>.</p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
