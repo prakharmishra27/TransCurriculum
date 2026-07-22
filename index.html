@@ -48,24 +48,61 @@
               <span class="author-block"><sup>1</sup>University of Maryland, College Park</span><br>
               <span class="author-block"><sup>2</sup>George Mason University</span><br>
               <span class="author-block">IROS 2026</span>
-            </div>
+            </div>        
             <div class="publication-links">
               <span class="link-block">
-                <a href="static/pdfs/TransCurriculum.pdf" class="external-link button is-normal is-rounded is-dark">
+                <a href="static/pdfs/TransCurriculum.pdf"
+                   class="external-link button is-normal is-rounded is-dark">
                   <span>Paper</span>
                 </a>
               </span>
+            
               <span class="link-block">
-                <a href="https://github.com/prakharmishra27/TransCurriculum" class="external-link button is-normal is-rounded is-dark">
+                <a href="https://github.com/prakharmishra27/TransCurriculum"
+                   class="external-link button is-normal is-rounded is-dark">
                   <span>Code</span>
                 </a>
               </span>
+            
+              <span class="link-block">
+                <a href="video/TransCurriculumIros2026.mp4"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span>Video</span>
+                </a>
+              </span>
             </div>
+
           </div>
         </div>
       </div>
     </div>
   </section>
+
+
+  <!-- video -->
+
+  <section class="section">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-3">Presentation Video</h2>
+  
+          <video class="publication-video"
+                 controls
+                 playsinline
+                 preload="metadata">
+            <source src="video/TransCurriculumIros2026.mp4"
+                    type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  
 
   <section class="section">
     <div class="container is-max-desktop">
@@ -77,13 +114,93 @@
           </div>
         </div>
       </div>
+      
       <div class="columns is-centered has-text-centered mt-5">
-        <div class="column"><div class="result-card"><div class="value">6.3 m/s</div><div>maximum simulated velocity</div></div></div>
-        <div class="column"><div class="result-card"><div class="value">4.1 m/s</div><div>zero-shot hardware velocity</div></div></div>
-        <div class="column"><div class="result-card"><div class="value">18%</div><div>full-curriculum transfer loss</div></div></div>
+        <div class="column">
+          <div class="result-card">
+            <div class="value">6.3 ± 0.2 m/s</div>
+            <div>Maximum simulated velocity</div>
+          </div>
+        </div>
+      
+        <div class="column">
+          <div class="result-card">
+            <div class="value">4.1 ± 0.05 m/s</div>
+            <div>Zero-shot hardware velocity</div>
+          </div>
+        </div>
+      
+        <div class="column">
+          <div class="result-card">
+            <div class="value">27% → 18%</div>
+            <div>Sim-to-real transfer loss</div>
+          </div>
+        </div>
       </div>
     </div>
   </section>
+
+
+  <section class="section">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-3">Approach</h2>
+  
+          <div class="content has-text-justified">
+            <p>
+              TransCurriculum uses a transformer-based teacher to model
+              context–outcome history and adaptively sample task parameters
+              across velocity commands, terrain difficulty, and domain
+              randomization. The resulting curriculum trains a PPO locomotion
+              policy for fast and stable sim-to-real deployment.
+            </p>
+          </div>
+  
+          <figure>
+            <img
+              src="static/images/transcurriculumdia.png"
+              alt="Overview of the TransCurriculum training pipeline">
+            <figcaption class="has-text-centered mt-3">
+              TransCurriculum training and task-sampling pipeline.
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="section">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-full-width">
+          <h2 class="title is-3">Zero-Shot Hardware Deployment</h2>
+  
+          <div class="content has-text-justified">
+            <p>
+              We deploy the learned policy zero-shot on the Unitree Go1
+              across rigid, deformable, inclined, and irregular terrain.
+              The full multidimensional curriculum reaches
+              4.1 ± 0.05 m/s on hardware while improving stability and
+              reducing sim-to-real transfer loss from 27% to 18%.
+            </p>
+          </div>
+  
+          <figure>
+            <img
+              src="static/images/deploy1.png"
+              alt="Unitree Go1 deployed across pebbles, a wooden slope, and rocky terrain">
+            <figcaption class="has-text-centered mt-3">
+              Zero-shot deployment across pebbles, an inclined wooden surface,
+              and irregular rocky terrain.
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+    </div>
+  </section>
+
 
   <section class="section" id="BibTeX">
     <div class="container is-max-desktop content">
